@@ -3,7 +3,6 @@ pipeline {
      stages {
        stage('build') {
           steps {
-             checkout scm
              bat 'echo step1'
              bat 'echo step2'
              bat '''
