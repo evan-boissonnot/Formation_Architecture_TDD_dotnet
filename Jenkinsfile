@@ -16,7 +16,7 @@ pipeline {
        stage('test') {
           steps {
              bat '''
-             "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\mstest.exe" /testcontainer:ConsoleApp1Tests\\bin\\Debug\\ConsoleApp1Tests.dll /resultsfile:result.xml
+             "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\mstest.exe" /testcontainer:.\\ConsoleApp1Tests\\bin\\Debug\\ConsoleApp1Tests.dll /resultsfile:result.xml
              '''
           }
        }
