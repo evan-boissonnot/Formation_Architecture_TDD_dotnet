@@ -13,5 +13,10 @@ pipeline {
              echo 'not using shell'
           }
        }
+       stage('test') {
+          steps {
+             bat 'echo step1'
+          }
+       }
      }
 }
