@@ -1,11 +1,6 @@
 pipeline {
      agent any
      stages {
-          stage('sourcing') {
-               steps {
-                    checkout scm    
-               }
-          }
        stage('build') {
           steps {
              bat 'echo step1'
