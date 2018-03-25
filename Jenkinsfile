@@ -1,4 +1,5 @@
 pipeline {
+     def workspace = pwd() 
      agent any
      stages {
        stage('Checkout'){
@@ -8,7 +9,6 @@ pipeline {
           }
        stage('build') {
           steps {
-             def workspace = pwd() 
              bat 'echo step1'
              bat 'echo step2'
              bat '''
