@@ -11,7 +11,7 @@ pipeline {
              bat 'echo step1'
              bat 'echo step2'
              bat '''
-                SET %workspace% = %cd%
+                SET workspace = %cd%
                 "C:\\Program Files (x86)\\NuGet\\Visual Studio 2015\\nuget.exe" restore "%workspace%@script\\Formation.DotNet.TDD\\Formation.DotNet.TDD.sln"
                 "C:\\Program Files (x86)\\MSBuild\\14.0\\Bin\\msbuild.exe" "%workspace%@script\\Formation.DotNet.TDD\\Formation.DotNet.TDD.sln" /t:Rebuild
                 echo 'Example'
