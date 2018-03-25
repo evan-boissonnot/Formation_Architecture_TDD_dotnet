@@ -10,8 +10,8 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+	    Console.WriteLine("coucou");
             Console.ReadLine();
-
         }
     }
 }
