@@ -8,6 +8,7 @@ pipeline {
           }
        stage('build') {
           steps {
+             def workspace = pwd() 
              bat 'echo step1'
              bat 'echo step2'
              bat '''
