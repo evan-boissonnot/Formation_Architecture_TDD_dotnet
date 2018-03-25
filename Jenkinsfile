@@ -1,6 +1,11 @@
 pipeline {
      agent any
      stages {
+       stage('Checkout'){
+               steps {
+                    bat 'echo step1'
+               }
+          }
        stage('build') {
           steps {
              bat 'echo step1'
